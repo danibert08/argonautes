@@ -42,11 +42,14 @@ label {
 
 .member-item {
   padding: 0.25em 0;
+  width: 30%;
 }
 .member-list{
+  width: 80%;
+  padding-top: 2em;
+  margin: auto;
   text-align: center;
 }
-
 footer {
   position: absolute;
   bottom: 0;
