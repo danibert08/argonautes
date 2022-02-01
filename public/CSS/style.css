@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 3em auto;
 }
 
@@ -37,18 +37,17 @@ label {
 
 .new-member-form {
   margin: 2em 0 4em 0;
-  text-align: center;
+  text-align: left;
+  margin: auto;
+
 }
 
-.member-item {
-  padding: 0.25em 0;
-  width: 30%;
-}
 .member-list{
+  border: 1px solid black;
   width: 80%;
   padding-top: 2em;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
 }
 footer {
   position: absolute;
@@ -60,4 +59,15 @@ footer {
   color: #fff;
   background: #f76c6c;
   padding: 0.25em 0;
+}
+
+.icon{
+  border: none;
+  background: none;
+}
+
+.send{
+  background: #f0f0f0;
+  border-radius: 0;
+  padding: 0.1em 0.25em;
 }

@@ -1,0 +1,4 @@
+<form  method="post" action="{{ path('delete', {'id': argo.id}) }}" onsubmit="return confirm('Etes-vous sûr de vouloir supprimer cet Argonaute ?');">
+   <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ argo.id) }}">
+   <button role="submit"  class="icon text-danger me-3 " href="{{ path('delete', { id: argo.id }) }}"><i class="fas fa-trash"></i></button>
+</form>

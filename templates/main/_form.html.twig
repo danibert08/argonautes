@@ -1,0 +1,8 @@
+{{ form_start(form) }}
+    <div class="d-flex justify-content-center mb-5">
+        {{ form_widget(form) }}
+        <div class="d-flex flex-column justify-content-end">
+            <button type="submit" class="btn border border-dark mx-1 send">{{ button_label|default('Envoyer') }}</button>
+        </div>
+    </div>
+{{ form_end(form) }}
