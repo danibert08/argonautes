@@ -51,7 +51,7 @@ class MainController extends AbstractController
     }
 
      /**
-     * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
+     * @Route("/edit/{id}", name="edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, Argonaute $argonaute, EntityManagerInterface $entityManager): Response
     {
