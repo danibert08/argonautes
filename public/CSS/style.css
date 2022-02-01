@@ -4,12 +4,13 @@ body {
   position: relative;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
+  
 }
 
 main {
   max-width: 1200px;
   margin: 3em auto;
+  min-height: 80vh;
 }
 
 header {
@@ -50,9 +51,7 @@ label {
   /* text-align: center; */
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+ 
   min-width: 100vw;
   margin-top: 2em;
   text-align: center;
