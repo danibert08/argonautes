@@ -3,6 +3,7 @@
 {% block title %}Edition d'un Argonaute{% endblock %}
 
 {% block body %}
+<main>
     <div class="d-flex flex-column align-items-center">
         <h1 class="my-5">Edition de l'Argonaute N° {{ argonaute.id }} </h1>
 
@@ -10,4 +11,5 @@
 
         <a type="button" class="btn btn-success text-decoration-none " href="{{ path('main') }}">Retour à la liste des Argonautes</a>
     </div>
+</main>
 {% endblock %}

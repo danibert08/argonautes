@@ -15,7 +15,7 @@
         <section class="member-list d-flex flex-row flex-wrap ">
             {% for argo in argonautes %}
                 <div class="member-item d-flex px-5 col-12 col-sm-6 col-lg-4 my-2 ">{{ argo.name }}
-                    <a class="icon text-warning ms-3"  href="{{ path('edit', { id: argo.id }) }}"><i class="fas fa-edit"></i></a>
+                    <a class="icon text-warning ms-3"  href="{{ path('edit', { 'id': argo.id }) }}"><i class="fas fa-edit"></i></a>
                     {{ include('main/_delete.html.twig')}}
                 </div>
             {% endfor %}
