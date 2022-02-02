@@ -27,7 +27,7 @@ class MainController extends AbstractController
             $entityManager->persist($argonaute);
             $entityManager->flush();
 
-            return $this->redirectToRoute('main', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('main');
         }
 
         return $this->renderForm('main/index.html.twig', [
@@ -40,14 +40,14 @@ class MainController extends AbstractController
      /**
      * @Route("/{id}", name="delete", methods={"POST"})
      */
-    public function delete($id, Request $request, Argonaute $argonaute, EntityManagerInterface $entityManager): Response
+    public function delete( Request $request, Argonaute $argonaute, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$argonaute->getId(), $request->request->get('_token'))) {
             $entityManager->remove($argonaute);
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('main', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('main');
     }
 
      /**
@@ -61,7 +61,7 @@ class MainController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('main', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('main');
         }
 
         return $this->renderForm('main/edit.html.twig', [
